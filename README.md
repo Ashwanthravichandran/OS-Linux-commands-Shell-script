@@ -52,14 +52,14 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![alt text](img/cmp.png)
 comm file1 file2
  ## OUTPUT
-
+![alt text](img/comm.png)
  
 diff file1 file2
 ## OUTPUT
-
+![alt text](img/diff.png)
 
 #Filters
 
@@ -82,67 +82,67 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![alt text](img/cut.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![alt text](img/cut1.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![alt text](img/cut2.png)
 
-
-cat < newfile 
+cat > newfile 
 ```
 Hello world
 hello world
 ^d
 ````
-cat > newfile 
+cat < newfile 
 Hello world
 hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![alt text](img/grep.png)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![alt text](img/grep1.png)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![alt text](img/grep2.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
+![alt text](img/grep3.png)
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+![alt text](img/grep4.png)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![alt text](img/grep5.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![alt text](img/grep6.png)
 
-
-cat < newfile 
+cat > newfile 
 ```
 Hello world
 hello world
@@ -152,7 +152,7 @@ Linux is best in this World
 ^d
 ```
 
-cat > newfile
+cat < newfile
 ```
 Hello world
 hello world
@@ -163,60 +163,61 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![alt text](img/grep7.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![alt text](img/grep8.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![alt text](img/grep9.png)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-
+![alt text](img/grep10.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![alt text](img/grep11.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![alt text](img/grep12.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![alt text](img/grep13.png)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-
+![alt text](img/grep14.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![alt text](img/grep15.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![alt text](img/grep16.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![alt text](img/grep17.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
+![alt text](img/grep18.png)
 
 cat > file23
 ```
@@ -234,25 +235,26 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![alt text](img/grep19.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![alt text](img/grep20.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![alt text](img/sed1.png)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![alt text](img/sed2.png)
 
 
-
-sed  '/tom/s/5000/6000/' file23
+sed  
+'/tom/s/5000/6000/' file23
 ## OUTPUT
 
 
